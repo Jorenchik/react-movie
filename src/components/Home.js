@@ -31,7 +31,9 @@ const Home = () => {
         />
       ) : null}
       <SearchBar setSearchTerm={setSearchTerm} />
-      <Grid header="Popular movies">
+      <Grid
+        header={!searchTerm ? "Popular movies" : `Results for: ${searchTerm}`}
+      >
         {state.results.map((movie) => (
           <div key={movie.id}>
             {/* {movie.title} */}
