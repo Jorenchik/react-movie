@@ -44,5 +44,6 @@ export const useHomeFetch = () => {
     loading,
     error,
     setSearchTerm,
+    searchTerm,
   };
 };
