@@ -22,7 +22,6 @@ const Home = () => {
   const { state, loading, error, setSearchTerm, searchTerm, setIsLoadingMore } =
     useHomeFetch();
 
-  console.log(state);
   if (error) return <div>Something went wrong...</div>;
 
   return (
